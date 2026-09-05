@@ -51,13 +51,10 @@ async def get_all_entries(entry_service: EntryService = Depends(get_entry_servic
 @router.get("/entries/{entry_id}")
 async def get_entry(request: Request, entry_id: str, entry_service: EntryService = Depends(get_entry_service)):
     """return a single journal entry by ID"""
-    try:
-        result = await entry_service.get_entry(entry_id)
-        if not result:
-            raise HTTPException(status_code=404, detail="Entry not found")
-        return result
-    except Exception as e:
-        raise HTTPException(status_code=501, detail="Not implemented - complete this endpoint!")
+    result = await entry_service.get_entry(entry_id)
+    if not result:
+        raise HTTPException(status_code=404, detail="Entry not found")
+    return result
 
 @router.patch("/entries/{entry_id}")
 async def update_entry(entry_id: str, entry_update: dict, entry_service: EntryService = Depends(get_entry_service)):
