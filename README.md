@@ -96,7 +96,7 @@ Complete a learning journal API that allows users to:
 
 - ✅ **Store journal entries** (already implemented)
 - ✅ **Retrieve all journal entries** (already implemented)
-- ❌ **Retrieve single journal entry** (you need to implement)  
+- ❌ **Retrieve single journal entry** (you need to implement)
 - ❌ **Delete specific journal entries** (you need to implement)
 - ✅ **Update journal entries** (already implemented)
 - ✅ **Delete all entries** (already implemented)
@@ -111,27 +111,27 @@ You'll use **feature branches** and **Pull Requests (PRs)** for each task. Compl
 #### Task 1a: GET Single Entry Endpoint
 
 - Branch: `feature/get-single-entry`
-- [ ] Implement **GET /entries/{entry_id}** in `api/routers/journal_router.py`
+- [x] Implement **GET /entries/{entry_id}** in `api/routers/journal_router.py`
 
 #### Task 1b: DELETE Single Entry Endpoint
 
 - Branch: `feature/delete-entry`
-- [ ] Implement **DELETE /entries/{entry_id}** in `api/routers/journal_router.py`
+- [x] Implement **DELETE /entries/{entry_id}** in `api/routers/journal_router.py`
 
 ### 2. Logging Setup (Required)
 
 - Branch: `feature/logging-setup`
-- [ ] Configure logging in `api/main.py`
+- [x] Configure logging in `api/main.py`
 
 ### 3. Data Model Improvements (Optional)
 
-- Branch: `feature/data-model-improvements`  
+- Branch: `feature/data-model-improvements`
 - [ ] Add validators to `api/models/entry.py`
 
 ### 4. Cloud CLI Setup (Required for Deployment)
 
 - Branch: `feature/cloud-cli-setup`
-- [ ] Uncomment one CLI tool in `.devcontainer/devcontainer.json`
+- [x] Uncomment one CLI tool in `.devcontainer/devcontainer.json`
 
 ## 📊 Data Schema
 
